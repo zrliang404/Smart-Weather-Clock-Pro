@@ -1,0 +1,23 @@
+# 自动识别文本文件，保证跨平台换行一致（Keil/ARMCC 在 Windows 下使用 CRLF）
+* text=auto
+
+*.c      text eol=crlf
+*.h      text eol=crlf
+*.s      text eol=crlf
+*.uvprojx text eol=crlf
+*.uvoptx  text eol=crlf
+*.json   text eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# 二进制资源，禁止换行转换
+*.mp4 binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
