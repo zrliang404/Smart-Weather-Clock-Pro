@@ -21,8 +21,8 @@
 
 #define WEATHER_URL(city) "https://api.seniverse.com/v3/weather/now.json?key=SAsBo2lIdSq9kVPqt&location=" #city "&language=en&unit=c"
 
-static const char *wifi_ssid = "USER_162401";
-static const char *wifi_password = "28835771";
+static const char *wifi_ssid = "USER_162401";   /*修改成你的WIFI名字*/
+static const char *wifi_password = "28835771";  /*修改成你的WIFI密码*/
 /* ---------------------------------------------------------
  * 数据结构抽象
  * --------------------------------------------------------- */

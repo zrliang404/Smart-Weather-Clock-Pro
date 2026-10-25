@@ -1,4 +1,4 @@
-# 智能天气时钟（STM32F103 + ESP32 + ST7735）
+# 智能天气时钟升级版（STM32F103 + ESP32 + ST7735）（原作者：b站博主梅花七月香）
 
 一个基于 **STM32F103C8T6** 的桌面天气时钟：通过 **ESP32（ESP-AT 固件）** 联网，从心知天气（Seniverse）获取实时天气、用 SNTP 校准时间，在 **1.44 寸 128×128 ST7735 彩屏** 上显示时间、日期、星期、天气图标、气温和板载 NTC 测得的室温，并支持多城市切换与蜂鸣器闹钟。
 
@@ -179,16 +179,15 @@ static const char *wifi_password = "<你的WiFi密码>";
 
 ## 📄 开源协议
 
-本工程中 `driver/`、`app/` 等文件头部保留了原始 MIT 许可证声明（版权归 **梅花嵌入式**，本项目在其教学代码基础上二次开发），`firmware/` 下为 ST 的 CMSIS 与标准外设库（BSD-3-Clause 风格授权）。
+版权归 **梅花嵌入式**，本项目在其教学代码基础上二次开发，`firmware/` 下为 ST 的 CMSIS 与标准外设库（BSD-3-Clause 风格授权。
 
 建议整体以 **MIT License** 开源，并：
 
 1. 新增 `LICENSE` 文件（MIT 全文，版权人填你自己）；
-2. **不要删除**已有文件头中的版权与许可声明；
-3. 若代码来源于课程/教程模板，请先确认其许可条款允许公开再发布。
+2. 若代码来源于课程/教程模板，请先确认其许可条款允许公开再发布。
 
 ## 🙏 致谢
 
 - [心知天气 Seniverse](https://www.seniverse.com/)：天气数据接口
-- 梅花嵌入式：STM32 教学代码与 ST7735 驱动
+- 梅花嵌入式：STM32 教学代码与 ST7735 驱动（b站链接:【【全开源】stm32智能天气时钟,从零打造！(可写简历)】 https://www.bilibili.com/video/BV12hmFYBEVc/?share_source=copy_web&vd_source=82b917c7988999df0cca0f951ebeab53）
 - STMicroelectronics：CMSIS、STM32F10x 标准外设库
